@@ -11,5 +11,9 @@
     "url": "git+https://github.com/iwa/MeuhMeuh.git"
   },
   "author": "LesFunix",
-  "homepage": "https://github.com/iwa/MeuhMeuh#readme"
+  "homepage": "https://github.com/iwa/MeuhMeuh#readme",
+  "dependencies": {
+    "@types/node": "^14.14.31",
+    "chalk": "^4.1.0"
+  }
 }
