@@ -4,7 +4,9 @@
   "description": "MeuhMeuh est un programme de calcul developpé en TypeScript.",
   "main": "build/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "tsc",
+    "start": "tsc && node ."
   },
   "repository": {
     "type": "git",
