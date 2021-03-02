@@ -112,5 +112,7 @@ dist
 !.yarn/versions
 
 # tsc build files
-
 build/
+
+# pkg binaries
+bin/
