@@ -3,12 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - master
-      - dev
+      - main
   pull_request:
     branches:
-      - master
-      - dev
+      - main
 
 env:
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
