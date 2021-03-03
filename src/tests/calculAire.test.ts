@@ -8,7 +8,7 @@ test("calcul d'aire - 1", () => {
         [3, [1, 1]],
     ]);
 
-    expect(Math.round(calculAire(4, coords) * 1000) / 1000).toBe(4);
+    expect(Math.round(calculAire(coords) * 1000) / 1000).toBe(4);
 });
 
 test("calcul d'aire - 2", () => {
@@ -19,7 +19,7 @@ test("calcul d'aire - 2", () => {
         [3, [-15.1, -15.1]],
     ]);
 
-    expect(Math.round(calculAire(4, coords) * 1000) / 1000).toBe(13.125);
+    expect(Math.round(calculAire(coords) * 1000) / 1000).toBe(13.125);
 });
 
 test("calcul d'aire - 3", () => {
@@ -30,5 +30,5 @@ test("calcul d'aire - 3", () => {
         [3, [1.97, 4.07]],
     ]);
 
-    expect(Math.round(calculAire(4, coords) * 1000) / 1000).toBe(3.563);
+    expect(Math.round(calculAire(coords) * 1000) / 1000).toBe(3.563);
 });
