@@ -34,7 +34,7 @@ jobs:
 
     - name: run tsc
       run: |
-        sudo yarn global add typescript
+        sudo yarn add typescript --dev
         tsc
 
     - name: upload build files
