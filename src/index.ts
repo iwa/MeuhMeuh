@@ -1,3 +1,3 @@
 import chalk from 'chalk';
 
-console.log(chalk.green(" --- Meuh Meuh --- "));
+console.log(chalk.bold(chalk.green(" --- Meuh Meuh --- ")));
