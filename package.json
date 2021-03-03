@@ -17,7 +17,8 @@
   "homepage": "https://github.com/iwa/MeuhMeuh#readme",
   "dependencies": {
     "@types/node": "^14.14.31",
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.0",
+    "enquirer": "^2.3.6"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
