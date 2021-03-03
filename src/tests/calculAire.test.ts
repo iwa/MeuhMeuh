@@ -1,4 +1,5 @@
 import calculAire from '../function/calculAire';
+import round from '../utils/round';
 
 test("calcul d'aire - 1", () => {
     let coords = new Map([
@@ -8,7 +9,7 @@ test("calcul d'aire - 1", () => {
         [3, [1, 1]],
     ]);
 
-    expect(Math.round(calculAire(coords) * 1000) / 1000).toEqual(4);
+    expect(round(calculAire(coords), 3)).toEqual(4);
 });
 
 test("calcul d'aire - 2", () => {
@@ -19,7 +20,7 @@ test("calcul d'aire - 2", () => {
         [3, [-15.1, -15.1]],
     ]);
 
-    expect(Math.round(calculAire(coords) * 1000) / 1000).toEqual(13.125);
+    expect(round(calculAire(coords), 3)).toEqual(13.125);
 });
 
 test("calcul d'aire - 3", () => {
@@ -30,5 +31,5 @@ test("calcul d'aire - 3", () => {
         [3, [1.97, 4.07]],
     ]);
 
-    expect(Math.round(calculAire(coords) * 1000) / 1000).toEqual(3.563);
+    expect(round(calculAire(coords), 3)).toEqual(3.563);
 });
