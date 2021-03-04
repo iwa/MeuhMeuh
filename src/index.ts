@@ -14,7 +14,7 @@ console.log(chalk.bold(chalk.green(" --- MeuhMeuh --- ")));
     let pointG = calculGravite(coords, aire);
     let isIn = appartenancePoint(coords, pointG);
 
-    console.log("\n --- Résultats ---");
+    console.log(chalk.whiteBright("\n --- Résultats ---"));
     console.log(`Aire : ${aire}`);
     console.log(`Centre de gravité : (${pointG[0]}, ${pointG[1]})`);
 
