@@ -13,5 +13,8 @@ export default function calculAire(coords: Map<number, number[]>) {
 
     res *= (1/2);
 
+    if (res < 0)
+        res *= -1;
+
     return res;
 }
