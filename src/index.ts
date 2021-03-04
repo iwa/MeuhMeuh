@@ -16,6 +16,12 @@ console.log(chalk.bold(chalk.green(" --- MeuhMeuh --- ")));
 
     console.log(chalk.whiteBright("\n --- Résultats ---"));
     console.log(`Aire : ${aire}`);
+
+    if(aire === 0) {
+        console.error(chalk.bold(chalk.red("Erreur: aire nulle, impossible de calculer le centre de gravité")));
+        process.exit(1);
+    }
+
     console.log(`Centre de gravité : (${pointG[0]}, ${pointG[1]})`);
 
     if(isIn) {
