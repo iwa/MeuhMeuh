@@ -1,4 +1,5 @@
 import chalk from 'chalk';
+const cowsay = require('cowsay2');
 
 import appartenancePoint from './function/appartenancePoint';
 import calculAire from './function/calculAire';
@@ -17,8 +18,11 @@ console.log(chalk.bold(chalk.green(" --- MeuhMeuh --- ")));
     console.log(`Aire : ${aire}`);
     console.log(`Centre de gravité : (${pointG[0]}, ${pointG[1]})`);
 
-    if(isIn)
+    if(isIn) {
         console.log(chalk.bold(chalk.greenBright("✔ La vache est dans le pré")));
-    else
+        console.log(chalk.gray(cowsay.say("Meuh Meuh !")));
+    } else {
         console.log(chalk.bold(chalk.redBright("× La vache est hors du pré")));
+        console.log(chalk.gray(cowsay.think("On m'a abandonnée... :'(")));
+    }
 })();

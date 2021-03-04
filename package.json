@@ -18,6 +18,7 @@
   "dependencies": {
     "@types/node": "^14.14.31",
     "chalk": "^4.1.0",
+    "cowsay2": "^2.0.4",
     "enquirer": "^2.3.6"
   },
   "devDependencies": {

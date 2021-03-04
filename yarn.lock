@@ -1450,6 +1450,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cowsay2@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "cowsay2@npm:2.0.4"
+  dependencies:
+    string-width: ^4
+  bin:
+    cowsay2: cli.js
+  checksum: 366610377a74ee1c84b624e0266726c5dd3f41dcf0643b3bfb2c226d977db73a8c6eec2effe3d35a66d68133a663a37a32ac1ac526273f499eb0a195acb04b9e
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^6.0.0":
   version: 6.0.5
   resolution: "cross-spawn@npm:6.0.5"
@@ -3345,6 +3356,7 @@ fsevents@^2.1.2:
     "@types/jest": ^26.0.20
     "@types/node": ^14.14.31
     chalk: ^4.1.0
+    cowsay2: ^2.0.4
     enquirer: ^2.3.6
     jest: ^26.6.3
     ts-jest: ^26.5.2
@@ -4517,7 +4529,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"string-width@npm:^4.1.0, string-width@npm:^4.2.0":
+"string-width@npm:^4, string-width@npm:^4.1.0, string-width@npm:^4.2.0":
   version: 4.2.2
   resolution: "string-width@npm:4.2.2"
   dependencies:
