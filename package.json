@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "postinstall": "tsc",
-    "build": "yarn && tsc && pkg build/index.js -c package.json -o bin/meuhmeuh",
+    "buildbin": "yarn && tsc && pkg build/index.js -c package.json -o bin/meuhmeuh",
     "start": "tsc && node ."
   },
   "repository": {
