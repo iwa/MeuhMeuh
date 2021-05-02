@@ -1,6 +1,8 @@
 import fs from 'fs';
 import chalk from "chalk";
 import printCoords from './printCoords';
+import validateFileValues from './validateFileValues';
+import generateCoords from './generateCoords';
 const { NumberPrompt } = require('enquirer');
 
 export default async function inputValues() {
@@ -19,35 +21,30 @@ export default async function inputValues() {
         }
 
         let splited = data.split('\n');
-        if (splited.length % 2 === 1) {
-            let length = splited.shift();
-            if (parseInt(length, 10) < 3) {
+        let values = validateFileValues(splited);
+
+        if (values.length % 2 === 1) {
+            let length = values.shift();
+            if (length < 3) {
                 console.error("Veuillez choisir un nombre de piquets supérieur ou égal à 3");
                 return process.exit(1);
             }
 
-            let coords: Map<number, number[]> = new Map();
-            let j = 0;
-            for (let i = 0; i < splited.length; i += 2) {
-                coords.set(j, [parseFloat(splited[i]), parseFloat(splited[i + 1])]);
-                j += 1;
-            }
+            let coords: Map<number, number[]> = generateCoords(values);
+
+            if(length != coords.size)
+                console.warn(chalk.yellow(`⚠️ Le fichier indique ${length} piquets, mais seulement ${coords.size} ont des coordonnées. Le calcul continuera avec ${coords.size} piquets.\n`));
 
             printCoords(coords);
 
             return coords;
         } else {
-            if ((splited.length / 2) < 3) {
+            if ((values.length / 2) < 3) {
                 console.error("Veuillez choisir un nombre de piquets supérieur ou égal à 3");
                 return process.exit(1);
             }
 
-            let coords: Map<number, number[]> = new Map();
-            let j = 0;
-            for (let i = 0; i < splited.length; i += 2) {
-                coords.set(j, [parseFloat(splited[i]), parseFloat(splited[i + 1])]);
-                j += 1;
-            }
+            let coords: Map<number, number[]> = generateCoords(values);
 
             printCoords(coords);
 
