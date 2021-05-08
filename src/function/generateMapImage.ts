@@ -84,4 +84,5 @@ export default function generateMapImage(coords: Map<number, number[]>, pointG: 
 
     let buffer = canvas.toBuffer('image/png');
     fs.writeFileSync('./output.png', buffer);
+    console.log("\nUn visuel a été généré sous forme d'image nommée 'output.png'.");
 }
