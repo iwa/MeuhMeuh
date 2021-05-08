@@ -1,40 +1,40 @@
 {
-  "name": "meuhmeuh",
-  "version": "1.0.0",
-  "description": "MeuhMeuh est un programme de calcul developpé en TypeScript.",
-  "main": "build/index.js",
-  "scripts": {
-    "test": "jest",
-    "postinstall": "tsc",
-    "buildbin": "yarn && tsc && pkg build/index.js -c package.json -o bin/meuhmeuh",
-    "start": "tsc && node ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iwa/MeuhMeuh.git"
-  },
-  "author": "LesFunix",
-  "homepage": "https://github.com/iwa/MeuhMeuh#readme",
-  "dependencies": {
-    "@types/node": "^15.0.1",
-    "canvas": "^2.7.0",
-    "chalk": "^4.1.1",
-    "cowsay2": "^2.0.4",
-    "enquirer": "^2.3.6"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "jest": "^26.6.3",
-    "pkg": "^5.1.0",
-    "ts-jest": "^26.5.5",
-    "typescript": "4.2.4"
-  },
-  "pkg": {
-    "scripts": "build/**/*.js",
-    "targets": [
-      "node14-macos-x64",
-      "node14-linux-x64",
-      "node14-win-x64"
-    ]
-  }
+    "name": "meuhmeuh",
+    "version": "1.0.0",
+    "description": "MeuhMeuh est un programme de calcul developpé en TypeScript.",
+    "main": "build/index.js",
+    "scripts": {
+        "test": "jest",
+        "postinstall": "tsc",
+        "buildbin": "yarn && tsc && pkg build/index.js -c package.json -o bin/meuhmeuh",
+        "start": "tsc && node ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iwa/MeuhMeuh.git"
+    },
+    "author": "LesFunix",
+    "homepage": "https://github.com/iwa/MeuhMeuh#readme",
+    "dependencies": {
+        "@types/node": "^15.0.2",
+        "canvas": "^2.7.0",
+        "chalk": "^4.1.1",
+        "cowsay2": "^2.0.4",
+        "enquirer": "^2.3.6"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.23",
+        "jest": "^26.6.3",
+        "pkg": "^5.1.0",
+        "ts-jest": "^26.5.6",
+        "typescript": "4.2.4"
+    },
+    "pkg": {
+        "scripts": "build/**/*.js",
+        "targets": [
+            "node14-macos-x64",
+            "node14-linux-x64",
+            "node14-win-x64"
+        ]
+    }
 }
