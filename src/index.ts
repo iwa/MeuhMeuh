@@ -4,6 +4,7 @@ const cowsay = require('cowsay2');
 import appartenancePoint from './function/appartenancePoint';
 import calculAire from './function/calculAire';
 import calculGravite from './function/calculGravite';
+import generateMapImage from './function/generateMapImage';
 import inputValues from './function/inputValues';
 
 console.log(chalk.bold(chalk.green(" --- MeuhMeuh --- ")));
@@ -30,5 +31,11 @@ console.log(chalk.bold(chalk.green(" --- MeuhMeuh --- ")));
     } else {
         console.log(chalk.bold(chalk.redBright("× La vache est hors du pré")));
         console.log(chalk.gray(cowsay.think("On m'a abandonnée... :'(")));
+    }
+
+    try {
+        generateMapImage(coords, pointG);
+    } catch (err) {
+        console.error(chalk.grey("Erreur lors de la génération du visuel. Vérifiez bien que vous avez installé toutes les dépendances requises indiquées dans le README."));
     }
 })();
