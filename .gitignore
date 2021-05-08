@@ -116,3 +116,6 @@ build/
 
 # pkg binaries
 bin/
+
+output.png
+test*.txt
