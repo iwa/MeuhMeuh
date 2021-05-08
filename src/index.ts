@@ -7,6 +7,10 @@ import calculGravite from './function/calculGravite';
 import generateMapImage from './function/generateMapImage';
 import inputValues from './function/inputValues';
 
+/**
+ * Main-like function
+ * @author LesFunix
+ */
 (async () => {
     console.log(chalk.bold(chalk.green(" --- MeuhMeuh --- ")));
 

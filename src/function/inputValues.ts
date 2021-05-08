@@ -5,6 +5,13 @@ import validateFileValues from './validateFileValues';
 import generateCoords from './generateCoords';
 const { NumberPrompt } = require('enquirer');
 
+/**
+ * Function d'entrées des valeurs requises
+ * Essaye de lire le fichier si indiqué lors de l'execution,
+ * sinon demande à l'utilisateur de rentrer manuellement les valeurs
+ * @author LesFunix
+ * @returns {Map<number, number[]>}
+ */
 export default async function inputValues() {
     let file = process.argv[2];
 

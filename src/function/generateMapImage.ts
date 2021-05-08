@@ -1,6 +1,13 @@
 import fs from 'fs';
 import { createCanvas } from 'canvas';
 
+/**
+ * Function générant une image représentant le polygone formé par
+ * les piquets ainsi que son centre de gravité
+ * @author LesFunix
+ * @param {Map<number, number[]>} coords
+ * @param {number[]} pointG
+ */
 export default function generateMapImage(coords: Map<number, number[]>, pointG: number[]) {
     for (const value of coords) {
         value[1][0] *= 10;

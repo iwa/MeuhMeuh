@@ -1,4 +1,10 @@
-export default function calculAire(coords: Map<number, number[]>) {
+/**
+ * Function calculant l'air du polygone formé par les piquets
+ * @author LesFunix
+ * @param {Map<number, number[]>} coords
+ * @returns {number}
+ */
+export default function calculAire(coords: Map<number, number[]>): number {
     let res = 0;
 
     for (let i = 0; i < coords.size; i++) {

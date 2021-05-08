@@ -1,3 +1,10 @@
+/**
+ * Récupère les valeurs brutes lues d'un fichier, transforme et vérifie
+ * les valeurs dans un nouveau tableau
+ * @author LesFunix
+ * @param {string[]} values
+ * @returns {number[]}
+ */
 export default function validateFileValues(values: string[]): number[] {
 
     let newSplited: number[] = [];
