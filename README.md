@@ -29,6 +29,30 @@ Nous nous excusons pour la gêne que cela à pu potentiellement vous occasionner
 npm start
 ```
 
+Vous pouvez également indiquer un fichier contenant les valeurs requises :
+```bash
+npm start tests/test1.txt
+```
+
+## 🗄 Formats de fichiers supportés
+
+Pour que vos fichiers soient lus correctement, ils doivent être formattés de la manière suivante :
+- Une valeur par ligne
+- La première valeur (première ligne) corresponds au nombre de piquets *(non obligatoire)*
+- Ensuite, entrez les coordonnées d'abscisse puis d'ordonnée de chaque point à la suite
+
+**Exemple :**
+- 3 Piquets : (1 ; 2)(3 ; 4)(2 ; 1)
+```
+3
+1
+2
+3
+4
+2
+1
+```
+
 ## 📄 Licence
 
 À la suite de l'évaluation, le projet sera public et open-source sous la licence [MIT](https://choosealicense.com/licenses/mit/).
