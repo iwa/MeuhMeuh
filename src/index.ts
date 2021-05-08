@@ -7,9 +7,9 @@ import calculGravite from './function/calculGravite';
 import generateMapImage from './function/generateMapImage';
 import inputValues from './function/inputValues';
 
-console.log(chalk.bold(chalk.green(" --- MeuhMeuh --- ")));
-
 (async () => {
+    console.log(chalk.bold(chalk.green(" --- MeuhMeuh --- ")));
+
     let coords = await inputValues();
     let aire = calculAire(coords);
     let pointG = calculGravite(coords, aire);
