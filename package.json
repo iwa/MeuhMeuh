@@ -6,7 +6,6 @@
     "scripts": {
         "test": "jest",
         "postinstall": "tsc",
-        "buildbin": "yarn && tsc && pkg build/index.js -c package.json -o bin/meuhmeuh",
         "start": "tsc && node ."
     },
     "repository": {
@@ -25,16 +24,7 @@
     "devDependencies": {
         "@types/jest": "^26.0.23",
         "jest": "^26.6.3",
-        "pkg": "^5.1.0",
         "ts-jest": "^26.5.6",
         "typescript": "4.2.4"
-    },
-    "pkg": {
-        "scripts": "build/**/*.js",
-        "targets": [
-            "node14-macos-x64",
-            "node14-linux-x64",
-            "node14-win-x64"
-        ]
     }
 }
