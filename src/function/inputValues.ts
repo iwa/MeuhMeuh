@@ -32,7 +32,7 @@ export default async function inputValues() {
 
             let coords: Map<number, number[]> = generateCoords(values);
 
-            if(length != coords.size)
+            if (length != coords.size)
                 console.warn(chalk.yellow(`⚠️ Le fichier indique ${length} piquets, mais seulement ${coords.size} ont des coordonnées. Le calcul continuera avec ${coords.size} piquets.\n`));
 
             printCoords(coords);

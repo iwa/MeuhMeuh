@@ -5,8 +5,8 @@ export default function appartenancePoint(coords: Map<number, number[]>, pointG:
         let x = (coords.get(i))[0];
         let y = (coords.get(i))[1];
 
-        let nextX = (coords.get(i+1) || coords.get(0))[0];
-        let nextY = (coords.get(i+1) || coords.get(0))[1];
+        let nextX = (coords.get(i + 1) || coords.get(0))[0];
+        let nextY = (coords.get(i + 1) || coords.get(0))[1];
 
         let GSi = [x - pointG[0], y - pointG[1]];
         let GSi1 = [nextX - pointG[0], nextY - pointG[1]];

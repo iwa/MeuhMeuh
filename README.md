@@ -6,32 +6,27 @@ Projet créé par **Les Funix**.
 
 ## 🛬 Installation
 
+1. Veillez d'abord à installer [NodeJS](https://nodejs.org/en/) (v14 minimum)
+2. Installer [les dépendances système de cette libraire](https://github.com/Automattic/node-canvas#compiling) en fonction de votre OS
+3. Executer cette commande dans le dossier courant du projet :
+
 ```bash
-///
+npm i
 ```
+
+---
+**Pourquoi une installation si fastidieuse ?**
+
+Nous avons d'abord développé le projet en utilisant la dépendence `pkg`, nous permettant de générer des executables pour chaque OS, rendant plus simple l'execution du projet.
+
+Malheureusement, dans un soucis d'amélioration du projet, nous avons du supprimer cette dépendance en vu de l'utilisation de `canvas`, une librairie nous permettant de générer facilement des visuels sous forme d'image. La seule contrainte étant que la librairie doit être compilée directement sur la machine, il n'existe pas de version pré-compilée fonctionnelle.
+
+Nous nous excusons pour la gêne que cela à pu potentiellement vous occasionner, mais nous tenions à faire cet ajout.
 
 ## ⌨️ Utilisation
 
 ```bash
-./meuhmeuh
-```
-
-## 💽 Installation manuelle
-
-Pour installer le projet manuellement, ou pour pouvoir éditer le code, il vous faudra :
-
-- NodeJS v14
-- TypeScript
-- Yarn
-
-Clonez le projet, et dans un terminal, entrez la commande suivante :
-```bash
-yarn && yarn setup
-```
-
-L'installation prendra un certain temps en fonction de votre connection. Enfin, executer le projet en faisant :
-```bash
-yarn buildnrun
+npm start
 ```
 
 ## 📄 Licence
