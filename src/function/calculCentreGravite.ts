@@ -5,7 +5,7 @@
  * @param {number} aire
  * @returns {number[]}
  */
-export default function calculGravite(coords: Map<number, number[]>, aire: number): number[] {
+export default function calculCentreGravite(coords: Map<number, number[]>, aire: number): number[] {
     let resX = 0, resY = 0;
 
     for (let i = 0; i < coords.size; i++) {

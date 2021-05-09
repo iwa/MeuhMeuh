@@ -3,7 +3,7 @@ const cowsay = require('cowsay2');
 
 import appartenancePoint from './function/appartenancePoint';
 import calculAire from './function/calculAire';
-import calculGravite from './function/calculGravite';
+import calculGravite from './function/calculCentreGravite';
 import generateMapImage from './function/generateMapImage';
 import inputValues from './function/inputValues';
 

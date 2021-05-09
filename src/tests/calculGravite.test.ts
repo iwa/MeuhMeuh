@@ -1,4 +1,4 @@
-import calculGravite from '../function/calculGravite';
+import calculGravite from '../function/calculCentreGravite';
 import round from '../utils/round';
 
 test("calcul gravité - 1", () => {
