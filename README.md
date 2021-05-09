@@ -7,6 +7,10 @@ Projet créé par **Les Funix**.
 ## 🛬 Installation
 
 1. Veillez d'abord à installer [NodeJS](https://nodejs.org/en/) (v14 minimum)
+
+|[Windows](https://nodejs.org/en/download/)| [MacOS](https://nodejs.org/en/download/) | [Debian & Ubuntu](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions) | [Autres OS](https://nodejs.org/en/download/package-manager/)
+| :-: | :-: | :-: | :-: |
+
 2. Installer [les dépendances système de cette libraire](https://github.com/Automattic/node-canvas#compiling) en fonction de votre OS
 3. Executer cette commande dans le dossier courant du projet :
 
@@ -21,7 +25,7 @@ Nous avons d'abord développé le projet en utilisant la dépendence `pkg`, nous
 
 Malheureusement, dans un soucis d'amélioration du projet, nous avons du supprimer cette dépendance en vu de l'utilisation de `canvas`, une librairie nous permettant de générer facilement des visuels sous forme d'image. La seule contrainte étant que la librairie doit être compilée directement sur la machine, il n'existe pas de version pré-compilée fonctionnelle.
 
-Nous nous excusons pour la gêne que cela à pu potentiellement vous occasionner, mais nous tenions à faire cet ajout.
+Nous nous excusons pour la gêne que cela à pu potentiellement vous occasionner, mais nous tenions réellement à faire cet ajout à notre projet.
 
 ## ⌨️ Utilisation
 
