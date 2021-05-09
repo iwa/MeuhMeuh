@@ -12,7 +12,8 @@ Projet créé par **Les Funix**.
 | :-: | :-: | :-: | :-: |
 
 2. Installer [les dépendances système de cette libraire](https://github.com/Automattic/node-canvas#compiling) en fonction de votre OS
-3. Executer cette commande dans le dossier courant du projet :
+3. Clonez le projet
+4. Executer cette commande dans le dossier courant du projet :
 
 ```bash
 npm i
