@@ -38,6 +38,8 @@ Vous pouvez également indiquer un fichier contenant les valeurs requises :
 npm start tests/test1.txt
 ```
 
+> Nous avons mis à disposition des fichiers contenant les valeurs tests de l'énoncé ainsi que la forme de Mickey dans le dossier `tests` à la racine du projet.
+
 ## 🗄 Formats de fichiers supportés
 
 Pour que vos fichiers soient lus correctement, ils doivent être formattés de la manière suivante :
