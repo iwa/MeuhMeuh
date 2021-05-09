@@ -3,7 +3,7 @@ const cowsay = require('cowsay2');
 
 import appartenancePoint from './function/appartenancePoint';
 import calculAire from './function/calculAire';
-import calculGravite from './function/calculCentreGravite';
+import calculCentreGravite from './function/calculCentreGravite';
 import generateMapImage from './function/generateMapImage';
 import inputValues from './function/inputValues';
 
@@ -16,7 +16,7 @@ import inputValues from './function/inputValues';
 
     let coords = await inputValues();
     let aire = calculAire(coords);
-    let pointG = calculGravite(coords, aire);
+    let pointG = calculCentreGravite(coords, aire);
     let isIn = appartenancePoint(coords, pointG);
 
     console.log(chalk.whiteBright("\n --- Résultats ---"));

@@ -1,4 +1,4 @@
-import calculGravite from '../function/calculCentreGravite';
+import calculCentreGravite from '../function/calculCentreGravite';
 import round from '../utils/round';
 
 test("calcul gravité - 1", () => {
@@ -9,7 +9,7 @@ test("calcul gravité - 1", () => {
         [3, [1, 1]],
     ]);
 
-    let res = calculGravite(coords, 4);
+    let res = calculCentreGravite(coords, 4);
 
     expect([round(res[0], 3), round(res[1], 3)]).toEqual([0, 0]);
 });
@@ -22,7 +22,7 @@ test("calcul gravité - 2", () => {
         [3, [-15.1, -15.1]],
     ]);
 
-    let res = calculGravite(coords, 13.125);
+    let res = calculCentreGravite(coords, 13.125);
 
     expect([round(res[0], 3), round(res[1], 3)]).toEqual([-14.226, -17.555]);
 });
@@ -35,7 +35,7 @@ test("calcul gravité - 3", () => {
         [3, [1.97, 4.07]],
     ]);
 
-    let res = calculGravite(coords, 3.563);
+    let res = calculCentreGravite(coords, 3.563);
 
     expect([round(res[0], 3), round(res[1], 3)]).toEqual([1.979, 1.904]);
 });
